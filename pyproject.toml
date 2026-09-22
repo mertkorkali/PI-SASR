@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pisasr"
+version = "1.0.0"
+description = "Physics-informed surrogate-assisted scenario reduction (PI-SASR) for two-stage stochastic unit commitment"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "LICENSE-DATA.md"]
+authors = [
+    { name = "Mert Korkali", email = "korkalim@missouri.edu" },
+    { name = "Davida Andriniaina" },
+]
+keywords = [
+    "unit commitment",
+    "stochastic programming",
+    "scenario reduction",
+    "Gaussian process",
+    "power systems",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "pyomo",
+    "gurobipy",
+    "openpyxl",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/mertkorkali/PI-SASR"
+Documentation = "https://github.com/mertkorkali/PI-SASR#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "gurobi: test solves a MILP or LP and needs Gurobi with a valid license",
+    "slow: test takes more than a few minutes",
+]

@@ -1,0 +1,26 @@
+# Reruns and raw third-party data (see data/README.md)
+outputs/
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+
+# Solver files
+*.lp
+*.mps
+gurobi.log
+*.log
+
+# Operating system and editors
+.DS_Store
+.vscode/
+.idea/

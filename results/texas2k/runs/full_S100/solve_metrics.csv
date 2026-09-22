@@ -1,0 +1,2 @@
+status,termination,objective,solve_time_seconds,model,n_scenarios,gamma
+ok,optimal,27591765.534757484,568.1998798847198,stochastic,100,

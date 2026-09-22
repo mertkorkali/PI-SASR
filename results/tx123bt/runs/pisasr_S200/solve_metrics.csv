@@ -1,0 +1,2 @@
+method,problem,objective,opt_gap_pct_vs_full,full_obj,approx_objective,approx_gap_pct,solve_time_seconds,exact_validation_s,n_scenarios_used,n_scenarios_full,n_fixed_baseload_units,surrogate_r2,surrogate_mae,t_design_eval_s,t_gp_fit_s,t_milp_solve_s,t_exact_cert_s
+PI-SASR,stochastic_200,38292332.48635506,0.671823549861361,38036792.35768427,38292177.9179382,0.6714171843208528,62.0506489276886,32.622382164001465,122,200,64,-0.01633743917898789,84507071.70528272,0.1441037654876709,4.874139308929443,56.62174987792969,32.622382164001465
