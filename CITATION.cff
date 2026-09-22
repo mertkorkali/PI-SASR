@@ -3,6 +3,7 @@ message: "If you use this software or its data, please cite the paper given unde
 type: software
 title: "PI-SASR: Physics-Informed Surrogate-Assisted Scenario Reduction for Two-Stage Stochastic Unit Commitment"
 version: 1.0.0
+date-released: "2026-09-22"
 abstract: >-
   Reference implementation, processed input data, numerical results and
   reproduction scripts of physics-informed surrogate-assisted scenario
